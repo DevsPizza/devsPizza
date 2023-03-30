@@ -1,7 +1,11 @@
 package devs_pizza;
 
+import java.io.IOException;
 import java.text.NumberFormat;
+import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import devs_pizza.util.Cores;
 
 public class Menu {
 
@@ -12,7 +16,7 @@ public class Menu {
 
 		int opcao;
 
-		int pedido, quantidade, borda = 0, saborBorda = 0;
+		int pedido, quantidade, borda = 0, saborBorda = 0, formaDePagamento, pagamento = 0;
 		float preco = 0;
 		char adicionarPedido = 'S';
 		boolean maisPedido = true;
@@ -144,7 +148,46 @@ public class Menu {
 				break;
 
 			case 2:
-				System.out.println("Forma de Pagamento");
+
+				System.out.println("\n••••••••••••••••• Forma de pagamento •••••••••••••••••\n");
+				System.out.println("1 - Cartão de Crédito");
+				System.out.println("2 - Cartão de Débito");
+				System.out.println("3 - Pix");
+				System.out.println("4 - Vale Refeição");
+				System.out.println("5 - Dinheiro");
+				System.out.println("0 - Sair");
+
+				formaDePagamento = leia.nextInt();
+
+				switch (formaDePagamento) {
+				case 1 -> {
+					System.out.println(nfMoeda.format(preco) + " pago no Cartão de Crédito, pressione 0 para sair");
+					pagamento = leia.nextInt();
+
+				}
+				case 2 -> {
+					System.out.println(nfMoeda.format(preco) + " pago no Cartão de Débito, pressione 0 para sair");
+					pagamento = leia.nextInt();
+
+				}
+				case 3 -> {
+					System.out.println(nfMoeda.format(preco) + " pago no Pix, pressione 0 para sair");
+					pagamento = leia.nextInt();
+
+				}
+				case 4 -> {
+					System.out.println(nfMoeda.format(preco) + " pago no Vale Refeição, pressione 0 para sair");
+					pagamento = leia.nextInt();
+
+				}
+				case 5 -> {
+					System.out.println(nfMoeda.format(preco) + " pago em Dinheiro, pressione 0 para sair");
+					pagamento = leia.nextInt();
+
+				}
+				default -> System.out.println("Opção inválida!");
+				}
+
 				break;
 
 			case 3:
@@ -185,8 +228,9 @@ public class Menu {
 
 		leia.close();
 	}
+
 	public static void sobre() {
-		
+
 		System.out.println("*********************************************************");
 		System.out.println("                                                         ");
 		System.out.println("Daisy Kelly Viana - daisyviana96@gmail.com               ");
@@ -209,12 +253,11 @@ public class Menu {
 		System.out.println("github.com/krolcorrea                                    ");
 		System.out.println("linkedin.com/in/carolina-correa-da-silva-120b2b268/      ");
 		System.out.println("                                                         ");
-		System.out.println("Deiziane Rodrigues - Deizianesantos.rodrigues15@gmail.com");                                                  
+		System.out.println("Deiziane Rodrigues - Deizianesantos.rodrigues15@gmail.com");
 		System.out.println("github.com/deizirrs/Java                                 ");
 		System.out.println("linkedin.com/in/deiziane-r-b687aa140                     ");
 		System.out.println("                                                         ");
 		System.out.println("*********************************************************");
-		
+
 	}
 }
-
