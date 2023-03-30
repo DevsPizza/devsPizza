@@ -19,10 +19,13 @@ public class Menu {
 
 		do {
 
-			System.out.println("*****************************************************");
-			System.out.println("                                                     ");
-			System.out.println("                    DEV PIZZA                        ");
-			System.out.println("                                                     ");
+			System.out.println("	_____                 _____  _	");
+			System.out.println("	|  __ \\               |  __ (_)	");
+			System.out.println("	| |  | | _____   _____| |__) | __________ _	");
+			System.out.println("	| |  | |/ _ \\ \\ / / __|  ___/ |_  /_  / _` |	");
+			System.out.println("	| |__| |  __/\\ V /\\__ \\ |   | |/ / / / (_| |	");
+			System.out.println("	|_____/ \\___| \\_/ |___/_|   |_/___/___\\__,_|	");
+			System.out.println("		");
 			System.out.println("*****************************************************");
 			System.out.println("                                                     ");
 			System.out.println("            1 - Adicionar Pedido                     ");
@@ -150,9 +153,25 @@ public class Menu {
 
 			case 4:
 //				System.out.println();
+				sobre();
 
 			case 9:
-				System.out.println("\nAgradecemos a sua preferência! !!");
+				System.out.println("\nAgradecemos a sua preferência! ");
+				System.out.println("*****************************************************");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣶⣶⣦⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠀⠀⠀⠀⠀⠀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣷⣤⠀⠈⠙⢿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⠆⠰⠶⠀⠘⢿⣿⣿⣿⣿⣿⣆⠀⠀⠀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣼⣿⣿⣿⠏⠀⢀⣠⣤⣤⣀⠙⣿⣿⣿⣿⣿⣷⡀⠀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⢈⣉⠉⣡⣤⢰⣿⣿⣿⣿⣿⣷⡈⢿⣿⣿⣿⣿⣷⡀	");
+				System.out.println("	⠀⠀⠀⠀⠀⠀⠀⡴⢡⣾⣿⣿⣷⠋⠁⣿⣿⣿⣿⣿⣿⣿⠃⠀⡻⣿⣿⣿⣿⡇	");
+				System.out.println("	⠀⠀⠀⠀⠀⢀⠜⠁⠸⣿⣿⣿⠟⠀⠀⠘⠿⣿⣿⣿⡿⠋⠰⠖⠱⣽⠟⠋⠉⡇	");
+				System.out.println("	⠀⠀⠀⠀⡰⠉⠖⣀⠀⠀⢁⣀⠀⣴⣶⣦⠀⢴⡆⠀⠀⢀⣀⣀⣉⡽⠷⠶⠋⠀	");
+				System.out.println("	⠀⠀⠀⡰⢡⣾⣿⣿⣿⡄⠛⠋⠘⣿⣿⡿⠀⠀⣐⣲⣤⣯⠞⠉⠁⠀⠀⠀⠀⠀	");
+				System.out.println("	⠀⢀⠔⠁⣿⣿⣿⣿⣿⡟⠀⠀⠀⢀⣄⣀⡞⠉⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀	");
+				System.out.println("	⠀⡜⠀⠀⠻⣿⣿⠿⣻⣥⣀⡀⢠⡟⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀	");
+				System.out.println("	⢰⠁⠀⡤⠖⠺⢶⡾⠃⠀⠈⠙⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀	");
+				System.out.println("	⠈⠓⠾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀	");
 				System.exit(0);
 				break;
 
@@ -166,5 +185,36 @@ public class Menu {
 
 		leia.close();
 	}
-
+	public static void sobre() {
+		
+		System.out.println("*********************************************************");
+		System.out.println("                                                         ");
+		System.out.println("Daisy Kelly Viana - daisyviana96@gmail.com               ");
+		System.out.println("github.com/Daisyviana                                    ");
+		System.out.println("linkedin.com/in/daisy-viana-6a299716b                    ");
+		System.out.println("                                                         ");
+		System.out.println("Bianca Luna - Kadu_300@live.com                          ");
+		System.out.println("Github.com/r4inha                                        ");
+		System.out.println("linkedin.com/in/bianca-luna-88aaa7116                    ");
+		System.out.println("                                                         ");
+		System.out.println("Michelle Greghi - michelle.neves23@gmail.com             ");
+		System.out.println("hgithub.com/MichelleGreghi                               ");
+		System.out.println("linkedin.com/in/michellegreghi/                          ");
+		System.out.println("                                                         ");
+		System.out.println("Gabriel Lopes Barbosa - lopesgabriel810@gmail.com        ");
+		System.out.println("github.com/Gabriellopesg9                                ");
+		System.out.println("linkedin.com/in/gabriel-lopes-98591924b/                 ");
+		System.out.println("                                                         ");
+		System.out.println("Carolina Correa da Silva - carolina.unila@gmail.com      ");
+		System.out.println("github.com/krolcorrea                                    ");
+		System.out.println("linkedin.com/in/carolina-correa-da-silva-120b2b268/      ");
+		System.out.println("                                                         ");
+		System.out.println("Deiziane Rodrigues - Deizianesantos.rodrigues15@gmail.com");                                                  
+		System.out.println("github.com/deizirrs/Java                                 ");
+		System.out.println("linkedin.com/in/deiziane-r-b687aa140                     ");
+		System.out.println("                                                         ");
+		System.out.println("*********************************************************");
+		
+	}
 }
+
