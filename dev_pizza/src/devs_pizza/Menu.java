@@ -2,6 +2,7 @@ package devs_pizza;
 
 import java.io.IOException;
 import java.text.NumberFormat;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class Menu {
 
 	public static void main(String[] args) {
 		Devs_PizzaController pedidos = new Devs_PizzaController();
+		 ArrayList<Float> lista = new ArrayList<Float>();
 
 		Scanner leia = new Scanner(System.in);
 		NumberFormat nfMoeda = NumberFormat.getCurrencyInstance();
@@ -20,11 +22,12 @@ public class Menu {
 		int opcao;
 
 		int pedido = 0, tamanho, quantidade, borda = 0, saborBorda = 0, formaDePagamento, pagamento = 0;
-		float preco = 0;
+		
 		char adicionarPedido = 'S';
 		boolean maisPedido = true;
 
 		do {
+			float preco = 0;
 
 			System.out.println("	_____                 _____  _	");
 			System.out.println("	|  __ \\               |  __ (_)	");
@@ -360,6 +363,7 @@ public class Menu {
 				System.out.println("\nSeu pedido ficou no total de R$: " + nfMoeda.format(preco));
 				System.out.println("\n•••••••••• Obrigada Pelo Pedido! ••••••••••");
 				pedidos.cadastrarpedido(new Devs_Pizza(tamanho, pedido, saborBorda, opcao, preco));
+				lista.add(preco);
 				break;
 
 			case 2:
@@ -406,8 +410,37 @@ public class Menu {
 				break;
 
 			case 3: {
-				System.out.println("Histórico de Vendas");
-				pedidos.historicodevenda();
+				System.out.println("Deja ver:");
+				System.out.println("1-Histórico de vendas");
+				System.out.println("2-Faturamento do dia");
+				opcao =leia.nextInt();
+				
+				
+				 
+			      switch(opcao) {
+			      case 1-> {System.out.println("Histórico de vendas:");
+			      
+					       pedidos.historicodevenda();
+					
+			      }
+			      case 2->{
+			        float soma = 0f;
+			        for (int i = 0; i < lista.size(); i++) {
+			            soma += lista.get(i);
+			            
+			            
+			           
+			            
+			        }
+			        
+			         System.out.println("*************************************");
+			            System.out.println("*     Faturamento do dia: " + soma+" ");
+			            System.out.println("*************************************");
+			        
+			        
+			        }
+			      }
+			        
 				break;
 			}
 			case 4:

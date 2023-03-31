@@ -17,7 +17,7 @@ public class Devs_PizzaController implements Devs_pizzaRepository{
 
 	@Override
 	public void faturamentomensal() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
