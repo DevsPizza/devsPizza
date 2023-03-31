@@ -19,7 +19,7 @@ public class Menu {
 
 		int opcao;
 
-		int pedido=0,tamanho, quantidade, borda = 0, saborBorda = 0, formaDePagamento, pagamento = 0;
+		int pedido = 0, tamanho, quantidade, borda = 0, saborBorda = 0, formaDePagamento, pagamento = 0;
 		float preco = 0;
 		char adicionarPedido = 'S';
 		boolean maisPedido = true;
@@ -52,54 +52,54 @@ public class Menu {
 				System.out.println("1-Pequena");
 				System.out.println("2-Média ");
 				System.out.println("3-Grande");
-				tamanho=leia.nextInt();
+				tamanho = leia.nextInt();
 				do {
-					switch(tamanho) {
-					case 1-> {
-							System.out.println("Selecione o sabor da Pizza que deseja");
-							System.out.println("\n••••••••••••••••• Cardápio •••••••••••••••••\n");
-							System.out.println("1\tPizza Mussarela" + " Preço: R$ 45,00");
-							System.out.println("2\tPizza Calabresa" + " Preço: R$ 45,00");
-							System.out.println("3\tFrango Com Catupiry" + " Preço: R$ 51,50");
-							System.out.println("4\tMilho com Queijo" + " Preço: R$ 51,50");
-							System.out.println("5\tNutella" + " Preço: R$ 51,00");
-							System.out.println("6\tChocolate Branco" + " Preço: R$ 45,50");
-		
-							System.out.println("\nDigite o Código Desejado: ");
-							pedido = leia.nextInt();
-							System.out.println("\nDigite a quantidade: ");
-							quantidade = leia.nextInt();
-		
-							switch (pedido) {
-							
-							case 1:
-								preco += quantidade * 45.0f;
-								System.out.println("Pedido: Pizza de Mussarela - Valor R$: " + nfMoeda.format(preco));
-								break;
-							case 2:
-								preco += quantidade * 45.0f;
-								System.out.println("Pedido: Pizza de Calabresa - Valor R$: " + nfMoeda.format(preco));
-								break;
-							case 3:
-								preco += quantidade * 51.5f;
-								System.out.println("Pedido: Frango com Catupiry - Valor R$: " + nfMoeda.format(preco));
-								break;
-							case 4:
-								preco += quantidade * 51.5f;
-								System.out.println("Pedido: Milho Com Queijo - Valor R$: " + nfMoeda.format(preco));
-								break;
-							case 5:
-								preco += quantidade * 51.0f;
-								System.out.println("Pedido: Nutella - Valor R$: " + nfMoeda.format(preco));
-								break;
-							case 6:
-								preco += quantidade * 45.5f;
-								System.out.println("Pedido: Chocolate Branco - Valor R$: " + nfMoeda.format(preco));
-								break;
-							default:
-								System.out.println("Opção Inválida!");
-							}
+					switch (tamanho) {
+					case 1 -> {
+						System.out.println("Selecione o sabor da Pizza que deseja");
+						System.out.println("\n••••••••••••••••• Cardápio •••••••••••••••••\n");
+						System.out.println("1\tPizza Mussarela" + " Preço: R$ 35,00");
+						System.out.println("2\tPizza Calabresa" + " Preço: R$ 35,00");
+						System.out.println("3\tFrango Com Catupiry" + " Preço: R$ 41,50");
+						System.out.println("4\tMilho com Queijo" + " Preço: R$ 41,50");
+						System.out.println("5\tNutella" + " Preço: R$ 41,00");
+						System.out.println("6\tChocolate Branco" + " Preço: R$ 35,50");
+
+						System.out.println("\nDigite o Código Desejado: ");
+						pedido = leia.nextInt();
+						System.out.println("\nDigite a quantidade: ");
+						quantidade = leia.nextInt();
+
+						switch (pedido) {
+
+						case 1:
+							preco += quantidade * 35.0f;
+							System.out.println("Pedido: Pizza de Mussarela - Valor R$: " + nfMoeda.format(preco));
+							break;
+						case 2:
+							preco += quantidade * 35.0f;
+							System.out.println("Pedido: Pizza de Calabresa - Valor R$: " + nfMoeda.format(preco));
+							break;
+						case 3:
+							preco += quantidade * 41.5f;
+							System.out.println("Pedido: Frango com Catupiry - Valor R$: " + nfMoeda.format(preco));
+							break;
+						case 4:
+							preco += quantidade * 41.5f;
+							System.out.println("Pedido: Milho Com Queijo - Valor R$: " + nfMoeda.format(preco));
+							break;
+						case 5:
+							preco += quantidade * 41.0f;
+							System.out.println("Pedido: Nutella - Valor R$: " + nfMoeda.format(preco));
+							break;
+						case 6:
+							preco += quantidade * 35.5f;
+							System.out.println("Pedido: Chocolate Branco - Valor R$: " + nfMoeda.format(preco));
+							break;
+						default:
+							System.out.println("Opção Inválida!");
 						}
+					}
 					case 2 -> {
 						System.out.println("Selecione o sabor da Pizza que deseja");
 						System.out.println("\n••••••••••••••••• Cardápio •••••••••••••••••\n");
@@ -109,14 +109,14 @@ public class Menu {
 						System.out.println("4\tMilho com Queijo" + " Preço: R$ 51,50");
 						System.out.println("5\tNutella" + " Preço: R$ 51,00");
 						System.out.println("6\tChocolate Branco" + " Preço: R$ 45,50");
-	
+
 						System.out.println("\nDigite o Código Desejado: ");
 						pedido = leia.nextInt();
 						System.out.println("\nDigite a quantidade: ");
 						quantidade = leia.nextInt();
-	
+
 						switch (pedido) {
-						
+
 						case 1:
 							preco += quantidade * 45.0f;
 							System.out.println("Pedido: Pizza de Mussarela - Valor R$: " + nfMoeda.format(preco));
@@ -148,52 +148,51 @@ public class Menu {
 					case 3 -> {
 						System.out.println("Selecione o sabor da Pizza que deseja");
 						System.out.println("\n••••••••••••••••• Cardápio •••••••••••••••••\n");
-						System.out.println("1\tPizza Mussarela" + " Preço: R$ 45,00");
-						System.out.println("2\tPizza Calabresa" + " Preço: R$ 45,00");
-						System.out.println("3\tFrango Com Catupiry" + " Preço: R$ 51,50");
-						System.out.println("4\tMilho com Queijo" + " Preço: R$ 51,50");
-						System.out.println("5\tNutella" + " Preço: R$ 51,00");
-						System.out.println("6\tChocolate Branco" + " Preço: R$ 45,50");
-	
+						System.out.println("1\tPizza Mussarela" + " Preço: R$ 55,00");
+						System.out.println("2\tPizza Calabresa" + " Preço: R$ 55,00");
+						System.out.println("3\tFrango Com Catupiry" + " Preço: R$ 61,50");
+						System.out.println("4\tMilho com Queijo" + " Preço: R$ 61,50");
+						System.out.println("5\tNutella" + " Preço: R$ 61,00");
+						System.out.println("6\tChocolate Branco" + " Preço: R$ 55,50");
+
 						System.out.println("\nDigite o Código Desejado: ");
 						pedido = leia.nextInt();
 						System.out.println("\nDigite a quantidade: ");
 						quantidade = leia.nextInt();
-	
+
 						switch (pedido) {
-						
+
 						case 1:
-							preco += quantidade * 45.0f;
+							preco += quantidade * 55.0f;
 							System.out.println("Pedido: Pizza de Mussarela - Valor R$: " + nfMoeda.format(preco));
 							break;
 						case 2:
-							preco += quantidade * 45.0f;
+							preco += quantidade * 55.0f;
 							System.out.println("Pedido: Pizza de Calabresa - Valor R$: " + nfMoeda.format(preco));
 							break;
 						case 3:
-							preco += quantidade * 51.5f;
+							preco += quantidade * 61.5f;
 							System.out.println("Pedido: Frango com Catupiry - Valor R$: " + nfMoeda.format(preco));
 							break;
 						case 4:
-							preco += quantidade * 51.5f;
+							preco += quantidade * 61.5f;
 							System.out.println("Pedido: Milho Com Queijo - Valor R$: " + nfMoeda.format(preco));
 							break;
 						case 5:
-							preco += quantidade * 51.0f;
+							preco += quantidade * 61.0f;
 							System.out.println("Pedido: Nutella - Valor R$: " + nfMoeda.format(preco));
 							break;
 						case 6:
-							preco += quantidade * 45.5f;
+							preco += quantidade * 55.5f;
 							System.out.println("Pedido: Chocolate Branco - Valor R$: " + nfMoeda.format(preco));
 							break;
 						default:
 							System.out.println("Opção Inválida!");
 						}
 					}
-					
-					
+
 					}
-					
+
 					System.out.println("\nDeseja Adicionar Borda Recheada? (S/N): ");
 					borda = leia.next().toUpperCase().charAt(0);
 
@@ -243,23 +242,17 @@ public class Menu {
 
 						}
 					}
-					
+
 				} while (maisPedido);
 				System.out.println("***************************************************************");
-				System.out
-						.println("*                                                             *");
-				System.out
-						.println("*                   Devs Bebidas                              *");
-				System.out
-						.println("*                                                             *");
+				System.out.println("*                                                             *");
+				System.out.println("*                   Devs Bebidas                              *");
+				System.out.println("*                                                             *");
 				System.out.println("***************************************************************");
-				System.out
-						.println("*                                                             *");
-				System.out
-						.println("*                  Refrigerantes                              *");
+				System.out.println("*                                                             *");
+				System.out.println("*                  Refrigerantes                              *");
 				System.out.println("***************************************************************");
-				System.out
-						.println("*                                                             *");
+				System.out.println("*                                                             *");
 				System.out.println("*           1 - Coca Cola          350 ML      R$ 8,00        *");
 				System.out.println("*           2 - Coca Cola          2L          R$ 14,00       *");
 				System.out.println("*           3 - Coca Cola Zero     1,5L        R$ 16,00       *");
@@ -267,18 +260,14 @@ public class Menu {
 				System.out.println("*           5 - Sprite             2L          R$ 11,00       *");
 				System.out.println("*           6 - Guaraná Antartica  2L          R$ 12,00       *");
 				System.out.println("*           7 - Fanta Laranja      2L          R$ 12,00       *");
-				System.out
-						.println("*           8 - Fanta Uva          2L          R$ 12,00       *");
+				System.out.println("*           8 - Fanta Uva          2L          R$ 12,00       *");
 				System.out.println("***************************************************************");
-				System.out
-						.println("*                                                             *");
+				System.out.println("*                                                             *");
 				System.out.println("*                      Água                                   *");
 				System.out.println("***************************************************************");
-				System.out
-						.println("*           9 - Água com gás 1L - R$ 12,00                    *");
+				System.out.println("*           9 - Água com gás 1L - R$ 12,00                    *");
 				System.out.println("*          10 - Água sem gás 1L - R$ 08,00                    *");
-				System.out
-						.println("*                                                             *");
+				System.out.println("*                                                             *");
 				System.out.println("***************************************************************");
 
 				System.out.print("\nEntre com a bebida desejada:  ");
@@ -370,7 +359,7 @@ public class Menu {
 				// System.exit(0);
 				System.out.println("\nSeu pedido ficou no total de R$: " + nfMoeda.format(preco));
 				System.out.println("\n•••••••••• Obrigada Pelo Pedido! ••••••••••");
-                 pedidos.cadastrarpedido(new Devs_Pizza(tamanho,pedido,saborBorda,opcao,preco));
+				pedidos.cadastrarpedido(new Devs_Pizza(tamanho, pedido, saborBorda, opcao, preco));
 				break;
 
 			case 2:
@@ -416,7 +405,7 @@ public class Menu {
 
 				break;
 
-			case 3:{
+			case 3: {
 				System.out.println("Histórico de Vendas");
 				pedidos.historicodevenda();
 				break;
