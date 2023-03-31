@@ -141,7 +141,129 @@ public class Menu {
 					}
 
 				} while (maisPedido);
+				System.out.println("***************************************************************");
+				System.out
+						.println("*                                                             *");
+				System.out
+						.println("*                   Devs Bebidas                              *");
+				System.out
+						.println("*                                                             *");
+				System.out.println("***************************************************************");
+				System.out
+						.println("*                                                             *");
+				System.out
+						.println("*                  Refrigerantes                              *");
+				System.out.println("***************************************************************");
+				System.out
+						.println("*                                                             *");
+				System.out.println("*           1 - Coca Cola          350 ML      R$ 8,00        *");
+				System.out.println("*           2 - Coca Cola          2L          R$ 14,00       *");
+				System.out.println("*           3 - Coca Cola Zero     1,5L        R$ 16,00       *");
+				System.out.println("*           4 - Pepsi              2L          R$ 10,00       *");
+				System.out.println("*           5 - Sprite             2L          R$ 11,00       *");
+				System.out.println("*           6 - Guaraná Antartica  2L          R$ 12,00       *");
+				System.out.println("*           7 - Fanta Laranja      2L          R$ 12,00       *");
+				System.out
+						.println("*           8 - Fanta Uva          2L          R$ 12,00       *");
+				System.out.println("***************************************************************");
+				System.out
+						.println("*                                                             *");
+				System.out.println("*                      Água                                   *");
+				System.out.println("***************************************************************");
+				System.out
+						.println("*           9 - Água com gás 1L - R$ 12,00                    *");
+				System.out.println("*          10 - Água sem gás 1L - R$ 08,00                    *");
+				System.out
+						.println("*                                                             *");
+				System.out.println("***************************************************************");
 
+				System.out.print("\nEntre com a bebida desejada:  ");
+				opcao = leia.nextInt();
+				System.out.println("\nDigite a quantidade: ");
+				quantidade = leia.nextInt();
+
+				if (opcao == 11) {
+					leia.close();
+					System.exit(0);
+				}
+
+				switch (opcao) {
+
+				case 1 -> {
+					System.out.println("\nCoca Cola 350 ML - R$ 8,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 8.00f;
+
+				}
+				case 2 -> {
+					System.out.println("\nCoca Cola 2L - R$ 14,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 14.00f;
+
+				}
+				case 3 -> {
+					System.out.println("\nVocê escolheu Coca Cola Zero 1,5L - R$ 16,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 16.00f;
+
+				}
+				case 4 -> {
+					System.out.println("\nVocê escolheu Pepsi 2L - R$ 10,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 10.00f;
+
+				}
+				case 5 -> {
+					System.out.println("\nVocê escolheu Sprite 2L - R$ 11,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 11.00f;
+
+				}
+				case 6 -> {
+					System.out.println("\nVocê escolheu  Guaraná Antartica 1,5L - R$ 12,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 12.00f;
+
+				}
+				case 7 -> {
+					System.out.println("\nVocê escolheu Fanta Laranja 2L - R$ 12,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 12.00f;
+
+				}
+				case 8 -> {
+					System.out.println("\nVocê escolheu Fanta Uva  2L - R$ 12,00  .");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 12.00f;
+
+				}
+				case 9 -> {
+					System.out.println("\nVocê escolheu  Água com gás 500L - R$ 12,00.");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 12.00f;
+
+				}
+				case 10 -> {
+					System.out.println("\nVocê escolheu Água sem gás 500L - R$ 08,00 .");
+					System.out.println("Seu pedido foi adicionado com sucesso!");
+					preco += quantidade * 8.00f;
+
+					System.out.println("\nDeseja adicionar outro pedido?(S/N): ");
+					adicionarPedido = leia.next().toUpperCase().charAt(0);
+					if (adicionarPedido == 'S') {
+						maisPedido = true;
+					} else {
+						maisPedido = false;
+					}
+				}
+				default -> {
+					System.out.println("\nOpção inválida!");
+					System.out.println("Por favor, digite um número inteiro.");
+				}
+				}
+				System.out.println("\nSeu pedido ficou no total de R$: " + nfMoeda.format(preco));
+				System.out.println("\n•••••••••• Obrigada Pelo Pedido! ••••••••••");
+				// System.exit(0);
 				System.out.println("\nSeu pedido ficou no total de R$: " + nfMoeda.format(preco));
 				System.out.println("\n•••••••••• Obrigada Pelo Pedido! ••••••••••");
 
@@ -195,7 +317,6 @@ public class Menu {
 				break;
 
 			case 4:
-//				System.out.println();
 				sobre();
 
 			case 9:
@@ -242,7 +363,7 @@ public class Menu {
 		System.out.println("linkedin.com/in/bianca-luna-88aaa7116                    ");
 		System.out.println("                                                         ");
 		System.out.println("Michelle Greghi - michelle.neves23@gmail.com             ");
-		System.out.println("hgithub.com/MichelleGreghi                               ");
+		System.out.println("github.com/MichelleGreghi                               ");
 		System.out.println("linkedin.com/in/michellegreghi/                          ");
 		System.out.println("                                                         ");
 		System.out.println("Gabriel Lopes Barbosa - lopesgabriel810@gmail.com        ");
